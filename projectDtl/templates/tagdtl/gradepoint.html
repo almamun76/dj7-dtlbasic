@@ -1,0 +1,25 @@
+{% extends "common_code/base.html" %}
+
+{% block title%}grading{% endblock title%}
+
+{% block content %}
+
+{% if score >= 80 and score <= 100 %}
+<h2>Your grade is A+</h2>
+{% elif score >= 70 and score < 80 %}
+<h2>Your grade is A</h2>
+{% elif score >= 60 and score < 70 %}
+<h2>Your grade is A-</h2>
+{% elif score >= 50 and score < 60 %}
+<h2>Your grade is B</h2>
+{% elif score >= 40 and score < 50 %}
+<h2>Your grade is C</h2>
+{% elif score >= 33 and score < 40 %}
+<h2>Your grade is D</h2>
+{% elif score >= 0 and score < 33 %}
+<h2>Your grade is F</h2>
+{% else %}
+<h2>Invalid Score</h2>
+{% endif %}
+
+{% endblock content %}

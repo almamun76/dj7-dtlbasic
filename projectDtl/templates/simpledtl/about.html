@@ -1,0 +1,13 @@
+{% extends "common_code/base.html" %}
+
+{% block title%}about{% endblock title%}
+
+{% block content %}
+
+<h1>About Me </h1>
+<h2>Name: {{ name|upper }}</h2>
+<h2>Profile: {{ profile|lower }} </h2>
+<h2>Email: {{ email }} </h2>
+<h2>Phone: {{ phone }} </h2>
+
+{% endblock content %}
